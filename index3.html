@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* style은 css 이고 html파일에 입력할때는 style로 싸주어야한다 */
+        *{
+            margin: 0; padding: 0;
+        }
+        .놀부{
+            background-color: #a74242;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid black;
+           
+        }
+        /* dispaly flex는 최신버전이고 구버전은 float: 을 사용한다 */
+        .놀부 .놀일자{
+            background-color: #5B0888;
+            width: 33.3333%;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 1em;
+            float: left;
+        }
+        .놀부 .놀이자{
+            background-color: #219C90;
+            text-align: center;
+            float: left;
+            width: 33.3333%;
+        }
+        .놀부 .놀삼자{
+            background-color: #EE9322;
+            width:150px;
+            text-align: center;
+            float: left;
+            width: 33.3333%;
+        }
+        .놀부> .병수발 {
+            clear:both;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="놀부">
+        <div class="놀일자">놀일자</div>
+        <div class="놀이자">놀이자</div>
+        <div class="놀삼자">놀삼자</div>
+        <div class="병수발"></div>
+    </div>
+    <div class="흥부">
+
+    </div>  
+</body>
+</html>
