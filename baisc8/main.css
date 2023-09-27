@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.부모 {
+    background-color: yellowgreen;
+    width: 1000px;
+    background-image: url(https://manual.notch.one/0.9.23/en/docs/nodes/generators/grid/img/node-generators-grid-img.jpg);
+    background-size: cover;
+    margin-top: 100px; margin-left: 100px; margin-bottom: 3000px;
+   /*  position: relative;
+    left: 200px;
+    top: 200px; */
+    text-align: center;
+  
+}
+
+.부모 .자식 {
+    height: 200px;
+}
+
+.부모 .첫째 {
+    left: 200px;
+    background-color: blueviolet;
+    width: 200px; position: relative; /* 원래 자리를 기억함 */
+}
+
+.부모 .둘째 {
+    background-color: brown;
+    width: 200px;
+    position: absolute; left: 0px; top: 0px;
+}
+/* 포지션을 absolute로하면 부모가 포지션이 있으면 그부모의 포지션을 따라가고 없다면 그다음으로 body를 따라간다 */
+
+.부모 .셋째 {
+    background-color: burlywood;
+    width: 200px;
+    position: static; /* 기본값 */
+}
+.부모 .넷째 {
+    background-color: rgb(165, 152, 33);
+    width: 200px;
+    position: fixed; right: 0;top: 200px;
+}
+/* fixed는 화면을 기준으로 따라간다 스크롤을 내려도 무조건 화면이기준 */

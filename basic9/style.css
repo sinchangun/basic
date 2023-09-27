@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치료::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.전체 {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.전체 .첫번째 {
+    background-color: #81b3c2;
+    padding: 20px;
+}
+
+.전체 .첫번째 .자식 {
+    float: left;
+    background-color: #dacc8e;
+    height: 200px;
+    width: 24.25%;
+    margin-right: 1%;
+}
+
+.전체 .첫번째 .자식1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.전체 .첫번째 .자식1 .상 {
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/09/06/rorIiPCwuY4WMxNE8rm6eRlaooKW3My2_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.전체 .첫번째 .자식1 .하 {
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/09/06/tWJO67UHcdUTNqkAI4b7w1pcatwnItxZ_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.9s;
+}
+
+.전체 .첫번째 .자식1 .하:hover {
+    opacity: 0%;
+
+}
+
+.전체 .첫번째 .자식2 {
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/09/14/3UKGIQpaiqJt70oVW8fXV7SRtVkUFJMT_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.전체 .첫번째 .자식2 .상 {
+    background-color: #e225e9;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    /* 자식의 공간만큼 차지. 넓이를 설정해줘야한다. 만약 설정하지 않는다면
+    글자만큼의 넓이를 가지게 되고 글자가 없으면 나타나지않음. */
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/09/14/AvKMYdwjEK3T4IqFx35zihLkLkHKhWN8_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.9s;
+    left: 100%;
+}
+
+.전체 .첫번째 .자식2:hover .상 {
+    left: 0;
+}
+
+.전체 .첫번째 .자식3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.전체 .첫번째 .자식3 .yt {
+    width: 100%;
+    position: absolute;
+    left: 50%;top: 50%;
+    /* transform: translate();//의 기준이 자기자신 */
+    transform: translate(-50%,-50%) scale(1.4);
+}
+
+.전체 .첫번째 .자식4 {
+    margin-right: 0px;
+}
+
+
+.전체 .두번째 {
+    background-color: #198a6d;
+}
+
+.전체 .두번째 .자식 {
+    background-color: #692b61;
+}
+
+.전체 .두번째 .자식1 {}
+
+.전체 .두번째 .자식2 {}
+
+.전체 .두번째 .자식3 {}
+
+.전체 .두번째 .자식4 {}

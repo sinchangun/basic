@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.약::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.어떤마을 {
+    background-color: #F9F3CC;
+    padding: 20px;
+}
+
+.어떤마을 .놀부 {
+    background-color: #439b72;
+    padding: 20px;
+}
+
+.어떤마을 .놀부 .child {
+    background-color: #ccbb1f;
+    float: left;
+}
+
+.어떤마을 .놀부 .child.one {}
+
+.어떤마을 .놀부 .child.two {}
+
+.어떤마을 .놀부 .child.three {}
+
+.어떤마을 .놀부 .child.four {}
+
+.어떤마을 .놀부 .hidden {
+    clear: both;
+}
+
+.어떤마을 .흥부 {
+    background-color: #885396;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.어떤마을 .흥부:hover {
+    color: white;
+}
+
+/* before after는 inline 요소이다.(글자와 같은 성질)
+ineline 요소는 공간을 인식하지 못함 clear:both는 부모가 공간을 인식하지못할때 인식하도록함
+clear:both 는 block 요소일때만 실행됨 */
+
+.어떤마을 .흥부::before {
+    content: ""
+}
+
+.어떤마을 .흥부::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.어떤마을 .흥부 .child {
+    background-color: #4e3749;
+    float: left;
+}
+
+.어떤마을 .흥부 .child.one {}
+
+.어떤마을 .흥부 .child.two {}
+
+.어떤마을 .흥부 .child.three {}
+
+.어떤마을 .흥부 .child.four {}
+
+.어떤마을 .칠부 {background-color: orange;margin-top: 30px;padding: 20px;}
+
+.어떤마을 .칠부 .child {background-color: orangered;float: left;}
+
+.어떤마을 .칠부 .child.one {}
+
+.어떤마을 .칠부 .child.twho {}
+
+.어떤마을 .칠부 .child.three {}
+
+.어떤마을 .칠부 .child.four {}
