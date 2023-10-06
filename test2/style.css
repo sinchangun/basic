@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sector1 {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px;
+
+}
+
+.clean::after {
+    content: "";
+    clear: both;
+    display: block;
+
+
+}
+
+.sector1 .sector1_1 {
+    background-color: #ebebeb;
+    width: 1400px;
+    height: 50px;
+    margin: auto;
+
+}
+
+.sector1 .sector1_1 .bar {
+    float: left;
+}
+
+.sector1 .sector1_1 .top_bar1_1 {
+    width: 200px;
+    height: 50px;
+    margin: 0px 75px;
+}
+
+.sector1 .sector1_1 .top_bar1_2 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.8em;
+    width: 630px;
+    height: 50px;
+}
+
+.sector1 .sector1_1 .top_bar1_3 {
+    background-color: #f01919;
+    color: #ffffff;
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    margin: 10px 20px 10px 0px;
+    line-height: 30px;
+
+}
+
+.sector1 .sector1_1 .top_bar1_4 {
+    border-left: 1px solid rgb(129, 127, 127);
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 290px;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(44, 69, 182);
+    font-weight: bold;
+}
+
+/*        상단바        */
+
+.sector2 {
+    width: 100%;
+    height: 80px;
+
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+
+.sector2 .sector2_1 {
+    width: 1400px;
+    height: 80px;
+    margin: auto;
+}
+
+.sector2 .sector2_1 .list {
+    float: left;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: Verdana;
+    font-weight: lighter;
+}
+
+.sector2 .sector2_1 .list1 {
+    margin-left: 150px;
+}
+
+
+.sector2 .sector2_1 .list1:hover {
+    bottom: 50px;
+    transition: 0.9s;
+}
+
+.sector2 .sector2_1 .list2 {}
+
+.sector2 .sector2_1 .list3 {}
+
+.sector2 .sector2_1 .list4 {}
+
+.sector2 .sector2_1 .list5 {}
+
+.sector2 .sector2_1 .list6 {}
+
+.sector2 .sector2_1 .list7 {
+    margin-right: 100px;
+}
+
+.sector2 .sector2_1 .icon1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50px;
+}
+
+.sector2 .sector2_1 .icon2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50px;
+}
+
+.sector3 {
+    width: 1400px;
+    height: 392px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sector3_fixed {
+    width: 104px; height: 402px;
+    background-color: #d15a5a;
+    position: fixed;
+    border-radius: 15px; 
+    top: 190px;
+    right: 110px;
+    padding: 10px;
+}

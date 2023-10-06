@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clean::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#전체 {
+    background-color: #dbb86b;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 아이디를 호출하는방법# 아이디는 전체 사이트에 유일한 이름이어야한다.
+두가지 이름이 들어갈수도없다. */
+#전체 .놀부 {}
+
+#전체 .놀부 .자식 {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+}
+
+#전체 .놀부 .자식.자식1 img {
+    width: 100%;
+    vertical-align: middle;
+    /* 이미지는 인라인 요소이기때문에 조금의 공간(line-height같은존재)가 남아있어서 그걸 지워주려면
+    vertical-align: middle; 을사용해서 없애줄수있다. */
+}
+
+#전체 .놀부 .자식.자식2 {
+    padding: 10px;
+    /*공간의 넓이 = padding-left + border-left + width + border-right + padding-right
+    공간의 넓이 = 10px + 5px + width25% + 5px + 10px
+    위의경우 넓이 100퍼를 초과하기때문에 자식4가 밑의 칸으로 내려가버린다.
+    그럴경우 컨텐츠안에 paddint+border를 넣기위해선 box-sizing: boder-box 를 이용한다.
+    높이의 넓이 = padding-top + border-top + width + border-bottom + padding-bottom
+    높이의 넓이 = 10px + 5px + 자식의 높이 + 5px + 10px */
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-image: url(https://dimg.donga.com/wps/NEWS/IMAGE/2018/02/23/88808774.1.jpg);
+    /* 백그라운드를 채울때는 보더를 제외한 패딩까지는 이미지가 채워진다. */
+}
+
+#전체 .놀부 .자식.자식3 {
+    height: 200px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3419/3419250.png);
+    background-size: 50px;
+    /* 이미지 크기조절 */
+    background-repeat: no-repeat;
+    /* 이미지 반복 */
+    background-position: 50% top;
+    /* x축 y축 값이 같을때는 한번만 적어줘도된다(center인경우에만해당)*/
+}
+
+#전체 .놀부 .자식.자식4 {
+    margin-right: 0px;
+    height: 200px;
+    background-image: url(https://cdn.univ20.com/wp-content/uploads/2015/06/f5d03d53d72768f38d02e920c3fdc583.gif);
+    background-size: cover;
+    background-position: -2px 3px;
+    position: relative;
+    overflow: hidden ;
+}
+
+#전체 .놀부 .자식.자식4 .text {
+    background-color: #ff0000;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    /* transform: translate(x축, y축); */
+    transform: translate(-50%,-50%);
+    /* 위에 top left는 자식4를 기준으로 50%씩 떨어진것을 의미하고
+    transform의경우 자기자신을 기준으로 -50%만큼 떨어진것 */
+    padding: 10px 30px;
+    border-radius: 10px;
+    opacity: 0;
+    color: aliceblue;
+}
+
+#전체 .놀부 .자식.자식4:hover .text{
+    opacity: 0.7;
+    transition: 0.3s;
+    top: 50%;
+    
+}
