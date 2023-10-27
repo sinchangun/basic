@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../web"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../example"
+		},
+		{
+			"path": "../../../JavaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pratice"
+	}
+}
