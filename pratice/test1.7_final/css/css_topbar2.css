@@ -1,0 +1,114 @@
+.topbar2 {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(235, 233, 233);
+    height: 80px;
+}
+
+.topbar2 .size {
+    width: 1400px;
+    margin: auto;
+    height: 80px;
+}
+
+.topbar2 .size>ul {
+    line-height: 80px;
+}
+
+.topbar2 .size .hidden_space {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: -0.01%;
+    height: 60px;
+    background-color: #ffffff;
+    display: none;
+    border-bottom: 1px solid rgb(235, 233, 233);
+    border-top: 1px solid rgb(235, 233, 233);
+    z-index: 1;
+}
+
+.topbar2 .size:hover .hidden_space {
+    display: block;
+}
+
+.topbar2 .size>ul>.left_space {
+    float: left;
+    width: 140px;
+    height: 80px;
+}
+
+.topbar2 .size>ul>.right_space {
+    float: left;
+    width: 62px;
+    height: 80px;
+}
+
+.topbar2 .size>ul>li {
+    float: left;
+    position: relative;
+    width: 148px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.topbar2 .size>ul>li a {
+    /* transition: 0.3s; */
+}
+
+.topbar2 .size>ul>li:hover>a {
+    color: rgb(214, 24, 24);
+
+}
+
+.topbar2 .size>ul>li.border:hover {
+    border-bottom: 1px solid rgb(214, 24, 24);
+}
+
+.topbar2 .size>ul>li .submenu {
+    position: absolute; 
+    top: 81px;
+    display: none;
+    width: 700px;
+    height: 60px;
+    z-index: 1;
+    /* background-color: #f6f6f6; */
+}
+
+.topbar2 .size>ul>li .submenu_last {
+    position: absolute; 
+    top: 81px;
+    display: none;
+    width: 700px;
+    height: 60px;
+    right: 0px;
+    z-index: 1;
+}
+
+.topbar2 .size>ul>li .submenu li {
+    float: left;
+    padding: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar2 .size>ul>li .submenu_last li {
+    float: left;
+    padding: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar2 .size>ul>li .submenu li>a:hover {
+    color: rgb(214, 24, 24);
+}
+
+.topbar2 .size>ul>li .submenu_last li>a:hover {
+    color: rgb(214, 24, 24);
+}
+
+.topbar2 .size>ul>.icon {
+   float: left; width: 80px;height: 60px; padding: 10px 0px; text-align: right;
+}
+/* 140 + 148*7 + 142 + 80 */
